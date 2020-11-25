@@ -1,10 +1,10 @@
 module.exports = {
 
     database: {
-        username: "root",
-        password: "",
+        username: "admin",
+        password: "j3clnfj.",
         database: "gestion_monitorias",
-        host: "localhost"
+        host: "dbtaller.cew1lpy1ffwg.us-east-1.rds.amazonaws.com"
     }
 
 }
