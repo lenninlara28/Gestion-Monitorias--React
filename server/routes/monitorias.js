@@ -31,7 +31,7 @@ router.patch('/:id', (req, res) => {
         salon: req.body.salon
     },{
         where: {
-            id: params.id
+            id: req.params.id
         }
     }).then(result =>{
         res.json(result);

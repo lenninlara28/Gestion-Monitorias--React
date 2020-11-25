@@ -28,14 +28,14 @@ router.get('/', (req, res) => {
 router.patch('/:id', (req, res) => {
     Monitores.update({
         cedula: req.body.cedula,
-        nombres: req.body.nombre,
-        apellidos: req.body.apellido,
+        nombres: req.body.nombres,
+        apellidos: req.body.apellidos,
         telefono: req.body.telefono,
         programa_academico: req.body.programa,
         semestre: req.body.semestre
     },{
         where: {
-            id: params.id
+            id: req.params.id
         }
     }).then(result =>{
         res.json(result);
